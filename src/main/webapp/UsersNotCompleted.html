@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Формы и пользователи за последний час</title>
+    <title>Список пользователей которые начали активность</title>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="jquery.preloaders.js"></script>
     <script src="index.js"></script>
@@ -11,11 +11,13 @@
 <body>
     <table class="table table-hover">
         <thead class="thead-dark">
-            <th scope="col">#</th>
-            <th scope="col">ssoid</th>
-            <th scope="col">formid</th>
-            <th scope="col">ymdh</th>
+        <th scope="col">#</th>
+        <th scope="col">ssoid</th>
+        <th scope="col">type</th>
+        <th scope="col">subtype</th>
+
         </thead>
+
         <tbody>
 
         </tbody>
@@ -23,6 +25,6 @@
 </body>
 
 <script type="text/javascript">
-    showUsersLastHour();
+    usersNotCompleted();
 </script>
 </html>
